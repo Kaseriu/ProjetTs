@@ -2,10 +2,9 @@
   "name": "projet_ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "node index.js",
-
+    "start": "node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Kaseriu/ProjetTs/issues"
   },
-  "homepage": "https://github.com/Kaseriu/ProjetTs#readme"
+  "homepage": "https://github.com/Kaseriu/ProjetTs#readme",
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
 }
