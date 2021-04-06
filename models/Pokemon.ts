@@ -1,8 +1,15 @@
-export class Pokemon {
+export interface PokemonProps {
+    name: string;
+    speed: number;
+}
+
+export class Pokemon implements PokemonProps{
 
     name: string;
-
-    constructor(name: string) {
-        this.name = name;
+    speed: number;
+    
+    constructor(props: PokemonProps) {
+        this.name = props.name;
+        this.speed = props.speed;
     }
 }

@@ -1,5 +1,12 @@
 import {Pokemon} from "./models";
 
-const pokemon = new Pokemon("Pikachu");
+const pikachu = new Pokemon({
+    name: "Pikachu",
+    speed: 90
+});
 
-console.log(pokemon);
+const magicarpe = new Pokemon({
+    name: "Magicarpe",
+    speed: 80
+})
+
