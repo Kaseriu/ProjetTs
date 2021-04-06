@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "node index.ts",
+    "start": "ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Kaseriu/ProjetTs#readme",
   "devDependencies": {
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.3",
+    "ts-node": "^9.1.1"
+
   }
 }

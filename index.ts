@@ -1,10 +1,5 @@
-class Pokemon {
-
-    constructor(name) {
-        this.name = name;
-    }
-}
+import {Pokemon} from "./models";
 
 const pokemon = new Pokemon("Pikachu");
 
-console.log(pokemon)
+console.log(pokemon);
