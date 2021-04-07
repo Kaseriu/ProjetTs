@@ -8,5 +8,6 @@ const pikachu = new Pokemon({
 const magicarpe = new Pokemon({
     name: "Magicarpe",
     speed: 80
-})
+});
 
+pikachu.attackOrder(magicarpe);
