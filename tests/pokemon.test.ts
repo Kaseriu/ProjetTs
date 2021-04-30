@@ -49,8 +49,8 @@ describe('Test Pokemon', () => {
     })
 
     test('Attack Order', () => {
-        expect(pikachu.attackOrder(magicarpe)).toEqual("Pikachu attaque en premier");
-        expect(magicarpe.attackOrder(pikachu)).toEqual("Pikachu attaque en premier");
+        expect(pikachu.attackOrder(magicarpe)).toEqual(true);
+        expect(magicarpe.attackOrder(pikachu)).toEqual(false);
     });
 
     test('Attack', () => {
@@ -59,8 +59,16 @@ describe('Test Pokemon', () => {
         expect(pikachu.hp).toEqual(96);
         expect(magicarpe.hp).toEqual(78);
 
-        magicarpe.hp = 10;
-        expect(pikachu.attack(magicarpe, Math.floor(Math.random() * pikachu.attackList.length))).toEqual("Magicarpe est KO");
+        magicarpe.hp = 1;
+        expect(pikachu.attack(magicarpe, Math.floor(Math.random() * pikachu.attackList.length))).toEqual("Magicarpe est KO\n");
         expect(magicarpe.hp).toEqual(0);
+    });
+
+    test('Combat', async () => {
+        const winner1 = await pikachu.combat(magicarpe);
+        const winner2 = await magicarpe.combat(pikachu);
+
+        expect(winner1.name).toEqual("Pikachu");
+        expect(winner2.name).toEqual("Pikachu");
     });
 });
