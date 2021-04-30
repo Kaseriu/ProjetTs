@@ -19,12 +19,13 @@
   },
   "homepage": "https://github.com/Kaseriu/ProjetTs#readme",
   "devDependencies": {
-    "@babel/preset-typescript": "^7.13.0",
-    "jest": "^26.6.3",
-    "typescript": "^4.2.3",
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.13.0",
     "@types/jest": "^26.0.22",
-    "babel-jest": "^26.6.3"
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
   }
 }
